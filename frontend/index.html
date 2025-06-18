@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EchoClean - Voice Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>EchoClean</h1>
+        <p>Upload or record voice samples</p>
+
+        <label>Known Voice:</label>
+        <input type="file" id="knownVoice" accept="audio/*">
+        <button type="button" onclick="startRecording('known')">🎙️ Record</button><br>
+
+        <label>Test Voice:</label>
+        <input type="file" id="testVoice" accept="audio/*">
+        <button type="button" onclick="startRecording('test')">🎙️ Record</button><br>
+
+        <button id="analyzeBtn" type="button" onclick="analyzeVoice()">Analyze</button>
+        <div id="result" style="margin-top: 20px; font-size: 18px;"></div>
+        <div id="recordingStatus" style="color: red; font-weight: bold;"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
