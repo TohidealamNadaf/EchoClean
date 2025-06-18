@@ -1,1 +1,13 @@
-"venv/\n__pycache__/\n*.pyc\nuploads/\n*.wav\n.env" 
+# Ignore Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore audio
+uploads/*.wav
+
+# OS-specific
+.DS_Store
+Thumbs.db
